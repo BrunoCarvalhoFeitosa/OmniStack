@@ -1,0 +1,50 @@
+.b-new-incident-container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1020px;
+    height: 100vh;
+}
+
+.b-new-incident-container .b-new-incident-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 96px;
+    background: #F0F0F5;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.b-new-incident-container .b-new-incident-content .b-new-incident-apresentation {
+    width: 100%;
+    height: 380px;
+}
+
+.b-new-incident-container .b-new-incident-content .b-new-incident-apresentation h1 {
+    margin: 64px 0 32px;
+    font-size: 32px;
+}
+
+.b-new-incident-container .b-new-incident-content .b-new-incident-apresentation p {
+    font-size: 18px;
+    color: #737380;
+    line-height: 32px;
+}
+
+.b-new-incident-container .b-new-incident-content .b-new-incident-apresentation .b-logon {
+    margin-top: 20px;
+}
+
+.b-new-incident-container .b-new-incident-content .b-new-incident-form {
+    width: 100%;
+    max-width: 400px;
+}
+
+.b-new-incident-container .b-new-incident-content .b-new-incident-form input,
+.b-new-incident-container .b-new-incident-content .b-new-incident-form textarea {
+    margin-top: 8px;
+}
