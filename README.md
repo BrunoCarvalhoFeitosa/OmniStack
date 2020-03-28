@@ -1,17 +1,17 @@
 # Sobre o aplivativo
  Este aplicativo foi criado totalmente em Javascript através do **Node.js**, **React.js** e **React Native**.  Seu próprosito é **cadastrar** e **conectar** ONG's à Pessoas que possam ajudar em diversos propósitos e casos que envolvam doações
 
- * Back-End: Node.js e Jest.js
+ * **Back-End - Node.js e Jest.js**
      O Node foi utilizado para a criação de API's REST que farão o cadastro de ONG's, Pessoas e Casos, tendo
      comunicação com o Front-End e Back-End através do Axios. Também há o teste de algumas rotas feitas no back-end 
      utilizando o Jest.js.
 
- * Front-End: React.js
+ * **Front-End - React.js:**
      O React foi utilizado para a criação de componentes reutilizáveis para a web, seu papel e renderizar todo o
      layout idealizado com base no próposito do aplicativo e fazer comunicação entre o cliente e o servidor, a fim
      de gerar os registros no banco de dados relacional SQLite.
 
- * Mobile: React Native
+ * **Mobile - React Native:**
      O React Native foi utilizado para a criação dos componentes reutilizáveis em dispositivos móveis, para isso foi
      utilizado o Expo para a utilização do simulador do Android Studio, tendo como propósito fazer comunicação também
      com o SQLite tendo paginação dos casos através de scroll infinito.
@@ -35,20 +35,20 @@
 # About the app
 This application was created entirely in Javascript through **Node.js **, **React.js** and **React Native**. Its own purpose is   **register** and **connect** ONG's to People who can help in various purposes and cases involving donations
 
-* Back-End: Node.js and Jest.js
-     The Node was used to create REST APIs that will register NGOs, People and Cases, having communication with Front-End and 
-     Back-End through Axios. There is also the testing of some routes taken on the backend
-     using Jest.js.
+* **Back-End - Node.js and Jest.js:**
+   The Node was used to create REST APIs that will register NGOs, People and Cases, having communication with Front-End and 
+   Back-End through Axios. There is also the testing of some routes taken on the backend
+   using Jest.js.
 
-* Front-End: React.js
-     React was used to create reusable components for the web, its role and to render all the idealized layout based on
-     the purpose of the application and make communication between the client and the server, in order to generate the 
-     records in the SQLite relational database.
+* **Front-End - React.js:**
+   React was used to create reusable components for the web, its role and to render all the idealized layout based on
+   the purpose of the application and make communication between the client and the server, in order to generate the 
+   records in the SQLite relational database.
 
-* Mobile: React Native
-     React Native was used to create reusable components on mobile devices.
-     Expo was used to use the Android Studio simulator, with the purpose of also communicating
-     with SQLite having pagination of cases through infinite scroll.
+* **Mobile - React Native:**
+   React Native was used to create reusable components on mobile devices.
+   Expo was used to use the Android Studio simulator, with the purpose of also communicating
+   with SQLite having pagination of cases through infinite scroll.
 
 ## How to run it
  ###### In the browser
