@@ -30,3 +30,37 @@
   chamado [Expo] (https://play.google.com/store/apps/details?id=host.exp.exponent&hl=pt_BR), onde ele 
   gera um QR Code e simula a aplicação com Live Reloading e a segunda forma é configurando o emulador
   do **Android Studio**.
+  
+  
+# About the app
+  This application was created entirely in Javascript through ** Node.js **, ** React.js ** and ** React Native **. Its own purpose is   ** register ** and ** connect ** ONG's to People who can help in various purposes and cases involving donations
+
+ * Back-End: Node.js and Jest.js
+     The Node was used to create REST APIs that will register NGOs, People and Cases, having
+     communication with Front-End and Back-End through Axios. There is also the testing of some routes taken on the backend
+     using Jest.js.
+
+ * Front-End: React.js
+     React was used to create reusable components for the web, its role and to render all the
+     idealized layout based on the purpose of the application and make communication between the client and the server, in order
+     to generate the records in the SQLite relational database.
+
+ * Mobile: React Native
+     React Native was used to create reusable components on mobile devices.
+     Expo was used to use the Android Studio simulator, with the purpose of also communicating
+     with SQLite having pagination of cases through infinite scroll.
+
+## How to run it
+ ###### In the browser
+  ** Clone ** this remote repository on ** your machine ** and ** install ** all ** dependencies **
+  through ** NPM or YARN **, to ** execute Node and React ** use the command ** npm start ** this will make
+  that the application is already open on your localhost.
+
+ ###### On the smartphone
+  ** Clone ** this remote repository on ** your machine ** and ** install ** all ** dependencies **
+  using ** NPM or YARN **, to run ** Node and React Native ** use the ** npm start ** command this will do
+  with both running, Node will run on port 3333 and React Native on port 19002 through
+  of the expo. ** expo ** provided two ways to view the application, the first is through the app
+  called [Expo] (https://play.google.com/store/apps/details?id=host.exp.exponent&hl=pt_BR), where it
+  generates a QR Code and simulates the application with Live Reloading and the second way is to configure the emulator
+  ** Android Studio **.
