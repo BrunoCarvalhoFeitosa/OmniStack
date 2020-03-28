@@ -36,8 +36,8 @@
 This application was created entirely in Javascript through **Node.js **, **React.js** and **React Native**. Its own purpose is   **register** and **connect** ONG's to People who can help in various purposes and cases involving donations
 
 * Back-End: Node.js and Jest.js
-     The Node was used to create REST APIs that will register NGOs, People and Cases, having
-     communication with Front-End and Back-End through Axios. There is also the testing of some routes taken on the backend
+     The Node was used to create REST APIs that will register NGOs, People and Cases, having communication with Front-End and 
+     Back-End through Axios. There is also the testing of some routes taken on the backend
      using Jest.js.
 
 * Front-End: React.js
