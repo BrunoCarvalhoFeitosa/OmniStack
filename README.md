@@ -16,14 +16,16 @@
      com o SQLite tendo paginação dos casos através de scroll infinito.
 
 ## Como executá-lo
- * No browser faça o clone deste repositório remoto em sua máquina e instale todas as depêndencias
- atravésdo NPM ou YARN, para executar o Node e React use o comando npm start isso fará com
- que a aplicação sejá aberta no seu localhost.
+ ###### No browser
+  Faça o **clone** deste repositório remoto em **sua máquina** e **instale** todas as **depêndencias**
+  atravésdo **NPM ou YARN**, para **executar o Node e React** use o comando **npm start** isso fará com
+  que a aplicação sejá aberta no seu localhost.
 
- * No celular faça o clone deste repositório remoto em sua máquina e instale todas as depêndencias 
- através do NPM ou YARN, para executar o Node e React Native use o comando npm start isso fará
- com que ambos sejam executados, o Node executará na porta 3333 e o React Native na porta 19002 através 
- do expo. O expo disponibilizado duas maneiras de visualizar a aplicação, a primeira é através do app
- chamado [Expo] (https://play.google.com/store/apps/details?id=host.exp.exponent&hl=pt_BR), onde ele 
- gera um QR Code e simula a aplicação com Live Reloading e a segunda forma é configurando o emulador
- do Android Studio.
+ ###### No celular 
+  Faça o **clone** deste repositório remoto em **sua máquina** e **instale** todas as **depêndencias** 
+  através do **NPM ou YARN**, para executar o **Node e React Native** use o comando **npm start** isso fará
+  com que ambos sejam executados, o Node executará na porta 3333 e o React Native na porta 19002 através 
+  do expo. O **expo** disponibilizado duas maneiras de visualizar a aplicação, a primeira é através do app
+  chamado [Expo] (https://play.google.com/store/apps/details?id=host.exp.exponent&hl=pt_BR), onde ele 
+  gera um QR Code e simula a aplicação com Live Reloading e a segunda forma é configurando o emulador
+  do **Android Studio**.
