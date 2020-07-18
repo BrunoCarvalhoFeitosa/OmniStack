@@ -1,4 +1,4 @@
-# Sobre o aplivativo
+# Sobre o aplicativo
  Este aplicativo foi criado totalmente em Javascript através do **Node.js**, **React.js** e **React Native**.  Seu próprosito é **cadastrar** e **conectar** ONG's à Pessoas que possam ajudar em diversos propósitos e casos que envolvam doações
 
  * **Back-End - Node.js e Jest.js**
