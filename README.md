@@ -43,17 +43,17 @@
 ## Sobre o projeto
 Este app foi feito em React.js, React Native, Node.js e SQLite e sua funcionalidade é baseada na conexão entre ONG's e pessoas, uma ONG pode cadastrar casos de ajuda de custo para cirurgias, exames ou consultas para seus pets e deixar seu endereço para contato para receber a ajuda de alguma pessoa.
 
-# Login
+### Login
 Após a efetuação do cadastro é gerado um ID para o usuário ter acesso ao dashboard e à todas as funcionalidades que irão ajudar a salvar a vida de diversos pets.
 
 ![BeTheHeroLoginScreen](https://user-images.githubusercontent.com/46093815/133952770-abe3d731-3409-4dda-88bf-c4e794498f63.png)
 
-# Cadastro
+### Cadastro
 Ao preencher corretamento todos os dados um ID único é gerado pelo sistema para que a ONG faça seu login e tenha acesso ao dashboard.
 
 ![BeTheHeroRegisterScreen](https://user-images.githubusercontent.com/46093815/133953290-f3b71b13-625b-416b-9452-f8743758a775.png)
 
-# Dashboard
+### Dashboard
 No dashboard é possível cadastrar milhares de casos que terão um título, uma descrição e um custo para determinada necessidade da ONG, é possível excluir casos para que ao receber a ajuda a ONG feche aquele caso e também é possível efetuar logout.
 
 ![BeTheHeroDashboard](https://user-images.githubusercontent.com/46093815/133953440-50115db3-85c0-4c84-9efe-5444575be2de.png)
