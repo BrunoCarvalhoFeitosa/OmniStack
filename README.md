@@ -1,66 +1,131 @@
-# Sobre o aplicativo
- Este aplicativo foi criado totalmente em Javascript através do **Node.js**, **React.js** e **React Native**.  Seu próprosito é **cadastrar** e **conectar** ONG's à Pessoas que possam ajudar em diversos propósitos e casos que envolvam doações
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <a href="https://github.com/BrunoCarvalhoFeitosa/BeTheHero">
+    <img src="/frontend/src/assets/brand.svg" alt="Logo" />
+  </a>
 
- * **Back-End - Node.js e Jest.js**
-     O Node foi utilizado para a criação de API's REST que farão o cadastro de ONG's, Pessoas e Casos, tendo
-     comunicação com o Front-End e Back-End através do Axios. Também há o teste de algumas rotas feitas no back-end 
-     utilizando o Jest.js.
+  <p align="center">
+    Um app solidário que conecta ONG's à pessoas, neste app você pode criar uma conta e registrar casos de abandono e violência, ou pedir ajudas de custo para consultas ou cirurgias para o seu pet.
+  </p>
+</p>
 
- * **Front-End - React.js:**
-     O React foi utilizado para a criação de componentes reutilizáveis para a web, seu papel e renderizar todo o
-     layout idealizado com base no próposito do aplicativo e fazer comunicação entre o cliente e o servidor, a fim
-     de gerar os registros no banco de dados relacional SQLite.
 
- * **Mobile - React Native:**
-     O React Native foi utilizado para a criação dos componentes reutilizáveis em dispositivos móveis, para isso foi
-     utilizado o Expo para a utilização do simulador do Android Studio, tendo como propósito fazer comunicação também
-     com o SQLite tendo paginação dos casos através de scroll infinito.
 
-## Como executá-lo
- ###### No browser
-  Faça o **clone** deste repositório remoto em **sua máquina** e **instale** todas as **depêndencias**
-  atravésdo **NPM ou YARN**, para **executar o Node e React** use o comando **npm start** isso fará com
-  que a aplicação sejá aberta no seu localhost.
+<!-- TABLE OF CONTENTS -->
+<details open="open">
+  <summary>Sumário</summary>
+  <ol>
+    <li>
+      <a href="#sobre-o-projeto">Sobre o projeto</a>
+      <ul>
+        <li><a href="#feito-com">Feito com</a></li>
+        <li><a href="#hospedagem">Hospedagem</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#iniciando-o-projeto">Iniciando o projeto</a>
+      <ul>
+        <li><a href="#pré-requisitos">Pré-requisitos</a></li>
+        <li><a href="#instalação">Instalação</a></li>
+      </ul>
+    </li>
+    <li><a href="#uso">Uso</a></li>
+    <li><a href="#license">Licenças</a></li>
+    <li><a href="#contato">Contato</a></li>
+    <li><a href="#reconhecimentos">Reconhecimentos</a></li>
+  </ol>
+</details>
 
- ###### No celular 
-  Faça o **clone** deste repositório remoto em **sua máquina** e **instale** todas as **depêndencias** 
-  através do **NPM ou YARN**, para executar o **Node e React Native** use o comando **npm start** isso fará
-  com que ambos sejam executados, o Node executará na porta 3333 e o React Native na porta 19002 através 
-  do expo. O **expo** disponibilizado duas maneiras de visualizar a aplicação, a primeira é através do app
-  chamado [Expo] (https://play.google.com/store/apps/details?id=host.exp.exponent&hl=pt_BR), onde ele 
-  gera um QR Code e simula a aplicação com Live Reloading e a segunda forma é configurando o emulador
-  do **Android Studio**.
-  
-  
-# About the app
-This application was created entirely in Javascript through **Node.js **, **React.js** and **React Native**. Its own purpose is   **register** and **connect** ONG's to People who can help in various purposes and cases involving donations
 
-* **Back-End - Node.js and Jest.js:**
-   The Node was used to create REST APIs that will register NGOs, People and Cases, having communication with Front-End and 
-   Back-End through Axios. There is also the testing of some routes taken on the backend
-   using Jest.js.
 
-* **Front-End - React.js:**
-   React was used to create reusable components for the web, its role and to render all the idealized layout based on
-   the purpose of the application and make communication between the client and the server, in order to generate the 
-   records in the SQLite relational database.
+<!-- ABOUT THE PROJECT -->
+## Sobre o projeto
+Este app foi feito em React.js, React Native, Node.js e SQLite e sua funcionalidade é baseada na conexão entre ONG's e pessoas, uma ONG pode cadastrar casos de ajuda de custo para cirurgias, exames ou consultas para seus pets e deixar seu endereço para contato para receber a ajuda de alguma pessoa.
 
-* **Mobile - React Native:**
-   React Native was used to create reusable components on mobile devices.
-   Expo was used to use the Android Studio simulator, with the purpose of also communicating
-   with SQLite having pagination of cases through infinite scroll.
+# Login
+Após a efetuação do cadastro é gerado um ID para o usuário ter acesso ao dashboard e à todas as funcionalidades que irão ajudar a salvar a vida de diversos pets.
 
-## How to run it
- ###### In the browser
-   **Clone**  this remote repository on **your machine** and **install**  all  **dependencies** 
-  through  **NPM or YARN** to **execute Node and React** use the command **npm start** this will make
-  that the application is already open on your localhost.
+![BeTheHeroLoginScreen](https://user-images.githubusercontent.com/46093815/133952770-abe3d731-3409-4dda-88bf-c4e794498f63.png)
 
- ###### On the smartphone
-  **Clone** this remote repository on **your machine** and **install** all **dependencies**
-  using **NPM or YARN**, to run **Node and React Native** use the **npm start** command this will do
-  with both running, Node will run on port 3333 and React Native on port 19002 through
-  of the expo. **expo** provided two ways to view the application, the first is through the app
-  called [Expo] (https://play.google.com/store/apps/details?id=host.exp.exponent&hl=pt_BR), where it
-  generates a QR Code and simulates the application with Live Reloading and the second way is to configure the emulator
-  **Android Studio**.
+# Cadastro
+Ao preencher corretamento todos os dados um ID único é gerado pelo sistema para que a ONG faça seu login e tenha acesso ao dashboard.
+
+![BeTheHeroRegisterScreen](https://user-images.githubusercontent.com/46093815/133953290-f3b71b13-625b-416b-9452-f8743758a775.png)
+
+# Dashboard
+No dashboard é possível cadastrar milhares de casos que terão um título, uma descrição e um custo para determinada necessidade da ONG, é possível excluir casos para que ao receber a ajuda a ONG feche aquele caso e também é possível efetuar logout.
+
+![BeTheHeroDashboard](https://user-images.githubusercontent.com/46093815/133953440-50115db3-85c0-4c84-9efe-5444575be2de.png)
+
+
+### Feito com
+
+* [React.js](https://pt-br.reactjs.org/)
+* [React Native](https://reactnative.dev/)
+* [Node.js](https://nodejs.org/en/)
+* [SQLite](https://www.sqlite.org/index.html)
+
+### Hospedagem
+
+O app ainda não foi hospedado em nenhuma plataforma, porém você poderá cloná-lo. Basta acompoanhar o próximo tópico.
+
+<!-- GETTING STARTED -->
+## Iniciando o projeto
+
+Primeiramente será necessário clonar este projeto em (https://github.com/BrunoCarvalhoFeitosa/BeTheHero.git), após o download será necessário abrir este projeto no seu
+editor e no terminal digitar npm install ou yarn install, posteriormente dentro do diretório back-end será preciso executar o comando npm run dev ou yarn dev, no diretório front-end executar o comando npm run start ou yarn start e no mobile npm run start ou yarn start. 
+
+### Pré-requisitos
+
+* npm
+  ```sh
+  npm install npm@latest -g
+  ```
+
+### Instalação
+
+1. Clone o repositório
+   ```sh
+   git clone https://github.com/BrunoCarvalhoFeitosa/BeTheHero.git
+   ```
+2. Instale os pacotes do NPM
+   ```sh
+   npm install ou yarn install
+   ```
+   
+3. Inicie o projeto back-end
+   ```sh
+   npm run dev ou yarn dev
+   ```   
+4. Inicie o projeto front-end
+   ```sh
+   npm run start ou yarn start
+   ```
+      
+5. Inicie o projeto mobile
+   ```sh
+   npm run start ou yarn start
+   ```
+
+
+<!-- USAGE EXAMPLES -->
+## Uso
+
+ONG's podem cadastrar seu perfil para pessoas entrarem em contato e ajudarem adotando algum pet ou custeando exames, cirurgias e consultas para os pets que sofreram abandono e agressões.
+
+
+<!-- LICENSE -->
+## License
+
+Distribuído sob a licença MIT.
+
+<!-- CONTACT -->
+## Contato
+
+Bruno Carvalho Feitosa - [GitHub](https://github.com/BrunoCarvalhoFeitosa) - [LinkedIn](https://www.linkedin.com/in/bruno-carvalho-feitosa/)
+
+
+<!-- ACKNOWLEDGEMENTS -->
+## Reconhecimentos
+* [Rocketseat](https://rocketseat.com.br/)
