@@ -68,7 +68,7 @@ No dashboard é possível cadastrar milhares de casos que terão um título, uma
 
 ### Hospedagem
 
-O app ainda não foi hospedado em nenhuma plataforma, porém você poderá cloná-lo. Basta acompoanhar o próximo tópico.
+O app ainda não foi hospedado em nenhuma plataforma, porém você poderá cloná-lo. Basta acompanhar o próximo tópico.
 
 <!-- GETTING STARTED -->
 ## Iniciando o projeto
