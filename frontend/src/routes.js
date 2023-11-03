@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Routes as Router, Route } from 'react-router-dom';
 import Logon from './pages/Logon';
 import Register from './pages/Register';
 import Profile from './pages/Profile';
@@ -9,12 +9,12 @@ import NewIncident from './pages/NewIncident';
 function Routes() {
     return(
         <BrowserRouter>
-            <Switch>
-                <Route path="/" exact component={Logon} />
-                <Route path="/register" component={Register} />
-                <Route path="/profile" component={Profile} />
-                <Route path="/incidents/new" component={NewIncident} />
-            </Switch>
+            <Router>
+                <Route exact path="/" element={<Logon />} />
+                <Route exact path="/register" element={<Register />} />
+                <Route exact path="/profile" element={<Profile />} />
+                <Route exact path="/incidents/new" element={<NewIncident />} />
+            </Router>
         </BrowserRouter>
     );
 }

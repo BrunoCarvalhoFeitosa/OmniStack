@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, useHistory } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { FiArrowLeft } from 'react-icons/fi';
 import api from '../../services/api';
 import './style.css';
@@ -12,7 +12,7 @@ function Register() {
     const [whatsapp, setWhatsapp] = useState('');
     const [city, setCity] = useState('');
     const [uf, setUf] = useState('');
-    const history = useHistory();
+    const navigate = useNavigate();
     
     //Async function to register a new ong
     async function handleRegister(ev) {
@@ -29,7 +29,7 @@ function Register() {
         try {
             const response = await api.post('ongs', data);
             alert(`Seu ID de acesso: ${response.data.id}`);
-            history.push('/');
+            navigate('/');
         } catch(error) {
             alert('Erro ao realizar cadastro, tente novamente.');
         }

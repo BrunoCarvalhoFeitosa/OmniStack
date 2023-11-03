@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, useHistory } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import api from '../../services/api';
 import { FiArrowLeft } from 'react-icons/fi';
 import './style.css';
@@ -10,7 +10,7 @@ function NewIncident() {
     const [title, setTitle] = useState('');
     const [description, setDescription] = useState('');
     const [value, setValue] = useState('');
-    const history = useHistory();
+    const navigate = useNavigate();
     const ongId = localStorage.getItem('ongId');
 
     //Async function to register a new incident
@@ -30,7 +30,7 @@ function NewIncident() {
                 }
             })
 
-            history.push('/profile');
+            navigate('/profile');
         } catch(error) {
             alert('Erro ao cadastrar caso, tente novamente');
         }

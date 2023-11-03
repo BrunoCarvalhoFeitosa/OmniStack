@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useHistory } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import api from '../../services/api';
 import { FiPower } from 'react-icons/fi';
 import { FiTrash2 } from 'react-icons/fi';
@@ -9,7 +9,7 @@ import brandImg from '../../assets/brand.svg';
 //Function to render profile of a ong using useEffect to get profile in specific moment
 function Profile() {
     const [incidents, setIncidents] = useState([]);
-    const history = useHistory();
+    const navigate = useNavigate();
     const ongId = localStorage.getItem('ongId');
     const ongName = localStorage.getItem('ongName');
 
@@ -42,7 +42,7 @@ function Profile() {
     //Function to made logout and clear localStorage
     function handleLogout() {
         localStorage.clear();
-        history.push('/');
+        navigate('/');
     }
 
     return (

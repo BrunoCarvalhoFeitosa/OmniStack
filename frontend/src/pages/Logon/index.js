@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
-import { Link, useHistory } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import api from '../../services/api';
-import './style.css';
 import { FiLogIn } from 'react-icons/fi';
 import brandImg from '../../assets/brand.svg';
 import heroesImg from '../../assets/heroes.png';
+import './style.css';
 
 //Function to made logon of a ong
 function Logon() {
     const [id, setId] = useState('');
-    const history  = useHistory();
+    const navigate  = useNavigate();
 
     //Async function to create logon session of ong
     async function handleLogin(ev) {
@@ -20,7 +20,7 @@ function Logon() {
             localStorage.setItem('ongId', id);
             localStorage.setItem('ongName', response.data.name);
 
-            history.push('/profile');
+            navigate('/profile');
         } catch(error) {
             alert('Falha no login, tente novamente.')
         }
